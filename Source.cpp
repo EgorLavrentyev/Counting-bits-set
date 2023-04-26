@@ -10,31 +10,6 @@
 unsigned char BitsSetTable256[256];
 double avg_time;
 
-//bool* get_word(bool mass[], int word_size, int number) {
-//
-//	bool* word = new bool[word_size];
-//
-//	if (word_size * (number + 1) > MASS_SIZE)
-//		return nullptr;
-//	
-//	for (int i = MASS_SIZE - 1 - word_size * (number - 1), k = 0; k < word_size; i--) {
-//		word[word_size - 1 - k] = mass[i];
-//		k++;
-//	}
-//
-//	return word;
-//}
-
-//number - номер слова справа налево начиная с нуля
-
-//uint32_t get_word(uint32_t mass, int word_size, int number) {
-//	if (word_size * (number + 1) > MASS_SIZE)
-//		return MASS_SIZE + 1;
-//	uint32_t word = mass >> (word_size * number);
-//	word &= ((1 << word_size) - 1);
-//	return word;
-//}
-
 void fill_dump(unsigned char dump[]) {
 	for (int i = 0; i < DUMP_SIZE; i++) {
 		dump[i] = rand() % 255;
